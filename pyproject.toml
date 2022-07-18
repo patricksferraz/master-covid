@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "master-covid"
+version = "0.1.0"
+description = ""
+authors = ["patricksferraz <patrick.ferraz@outlook.com>"]
+
+[tool.poetry.dependencies]
+python = "3.10"
+jupyter = "^1.0.0"
+matplotlib = "^3.5.2"
+pyarrow = "^8.0.0"
+pandas = "^1.4.3"
+pyspark = "^3.3.0"
+missingno = "^0.5.1"
+pyaiutils = {git = "https://github.com/patricksferraz/pyaiutils.git", rev = "chore/requirements"}
+tensorflow = "^2.9.1"
+shap = "^0.41.0"
+
+[tool.poetry.dev-dependencies]
+black = "^22.6.0"
+pylama = "^8.3.8"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
